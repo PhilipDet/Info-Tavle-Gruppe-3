@@ -72,4 +72,4 @@ function fetchData(url, type) {
 }
 
 let vid = document.getElementById("backgroundVideo");
-vid.playBackRate = 0.1;
+vid.playbackRate = 0.75;
