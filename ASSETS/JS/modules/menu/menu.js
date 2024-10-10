@@ -8,8 +8,6 @@ export default function menu(data) {
     data.Days.forEach((day) => {
         let dayShortName = day.DayName.slice(0, 3);
 
-        console.log(day.DayName, daysName[currentDay]);
-
         if (day.DayName === daysName[currentDay]) {
             html += `
             <div class="today">
