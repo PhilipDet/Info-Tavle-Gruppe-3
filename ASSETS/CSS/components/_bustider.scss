@@ -1,0 +1,87 @@
+@use "./colors" as colors;
+
+//Bustider
+#bustider {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border: 3px solid colors.$color-yellow;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+    legend {
+        text-align: center;
+        color: colors.$color-yellow;
+        padding: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    #busHeader {
+        h1 {
+            color: colors.$color-black;
+            background-color: colors.$color-yellow;
+            text-align: center;
+            font-size: 4rem;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding: 10px 0;
+        }
+
+        h2 {
+            color: colors.$color-white;
+            font-size: 2.5rem;
+            text-align: center;
+
+            span {
+                color: colors.$color-yellow;
+            }
+        }
+    }
+
+    #bustidContainer {
+        max-width: 360px;
+        width: 100%;
+        hgroup {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                color: colors.$color-white;
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        #bustiderne {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .bustid {
+                display: flex;
+                justify-content: space-between;
+                background-color: colors.$color-white;
+                border-radius: 5px;
+                overflow: hidden;
+
+                p {
+                    color: colors.$color-black;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    padding: 5px;
+                    text-align: center;
+                    flex: 1;
+
+                    &:last-child {
+                        background-color: colors.$color-yellow;
+                        max-width: 70px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

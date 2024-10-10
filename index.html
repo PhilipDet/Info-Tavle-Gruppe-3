@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Infoboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="ASSETS/CSS/main.css" />
+        <script src="ASSETS/JS/site.js" type="module"></script>
+    </head>
+    <body>
+        <main>
+            <div id="backgroundContainer"></div>
+            <!-- BUSTIDER -->
+            <fieldset id="bustider">
+                <legend><img src="ASSETS/IMAGES/Bus01.svg" /></legend>
+                <hgroup id="busHeader">
+                    <h1>BUSSER VED TECH</h1>
+                    <h2>DE NÆSTE 5 <span>AFGANGE</span></h2>
+                </hgroup>
+                <div id="bustidContainer">
+                    <hgroup>
+                        <h3>Stoppested</h3>
+                        <h3>Ankomst</h3>
+                    </hgroup>
+                    <div id="bustiderne"></div>
+                </div>
+            </fieldset>
+            <!-- KLOKKE -->
+            <fieldset id="clockFieldset">
+                <legend><img src="ASSETS/IMAGES/Watch01.svg" /></legend>
+                <div id="clock"></div>
+            </fieldset>
+            <!-- MENU -->
+            <fieldset id="menu">
+                <legend><img src="ASSETS/IMAGES/Burger01.svg" /></legend>
+                <hgroup>
+                    <h1>DAGENS FROKOST</h1>
+                    <h2></h2>
+                </hgroup>
+                <div id="menu-container"></div>
+            </fieldset>
+            <!-- SKEMA -->
+            <fieldset id="skema">
+                <legend><img src="ASSETS/IMAGES/Schedule01.svg" /></legend>
+                <div id="skema-container">
+                    <h1>Her finder du os</h1>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Lokale</th>
+                                <th>Holdnavn</th>
+                                <th>Fag</th>
+                                <th>Uddannelse</th>
+                                <th>Tid</th>
+                            </tr>
+                        </tbody>
+                        <tbody id="skema-timer"></tbody>
+                    </table>
+                </div>
+            </fieldset>
+        </main>
+        <video
+            id="backgroundVideo"
+            src="ASSETS/IMAGES/12448847_1920_1080_60fps.mp4"
+            autoplay
+            type="video/mp4"
+            loop
+            muted
+        ></video>
+    </body>
+</html>

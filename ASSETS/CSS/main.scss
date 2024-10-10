@@ -1,0 +1,42 @@
+@use "./components/colors" as colors;
+@use "./components/bustider" as bustider;
+@use "./components/clock" as clock;
+@use "./components/menu" as menu;
+@use "./components/skema" as skema;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: colors.$color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.33;
+    z-index: -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    gap: 20px 40px;
+}
