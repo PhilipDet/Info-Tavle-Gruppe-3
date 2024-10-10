@@ -22,7 +22,8 @@
         h2 {
             color: #fff;
             text-align: center;
-            font-size: 8.5rem;
+            font-size: 7rem;
+            padding-top: -0.5rem;
             line-height: 0.9;
         }
         h3 {
@@ -32,6 +33,7 @@
             font-weight: 300;
             color: colors.$color-yellow;
             text-transform: uppercase;
+            padding-bottom: 0.5rem;
         }
     }
 }
