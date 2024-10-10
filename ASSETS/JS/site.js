@@ -44,25 +44,18 @@ setInterval(() => {
 function fetchData(url, type) {
     fetch(url)
         .then((result) => {
-            //console.log(result);
             return result.json();
         })
 
         .then((data) => {
-            //console.log(data);
-
             switch (type) {
                 case "bus":
-                    console.log(data);
-
                     displayData(data);
                     break;
                 case "menu":
                     menu(data);
                     break;
                 case "schedule":
-                    console.log(data);
-
                     schedule(data.value);
                     break;
                 default:

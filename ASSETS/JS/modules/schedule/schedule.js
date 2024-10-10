@@ -45,8 +45,6 @@ function makeSchedule(schedule) {
     const maxItems = Math.min(schedule.length, 11);
 
     for (let i = 0; i < maxItems; i++) {
-        console.log(schedule[i].StartDate);
-
         let startDate = new Date(schedule[i].StartDate);
 
         let startDateHours = startDate.getHours().toString().padStart(2, "0");
