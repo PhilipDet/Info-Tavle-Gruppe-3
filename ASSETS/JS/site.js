@@ -32,14 +32,14 @@ setInterval(() => {
         "https://iws.itcn.dk/techcollege/schedules?departmentcode=smed",
         "schedule"
     );
-}, 30 * 1000); // 30 sekunder
+}, 15 * 1000); // 15 sekunder
 
 setInterval(() => {
     fetchData(
         "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1",
         "bus"
     );
-}, 30 * 1000); // 30 sekunder
+}, 10 * 1000); // 10 sekunder
 
 function fetchData(url, type) {
     fetch(url)
