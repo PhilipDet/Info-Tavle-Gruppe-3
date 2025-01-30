@@ -8,7 +8,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
     padding: 20px;
 
     legend {
@@ -83,6 +83,13 @@
                         max-width: 70px;
                         width: 100%;
                     }
+                }
+            }
+
+            .no-data {
+                p {
+                    max-width: 100% !important;
+                    background-color: colors.$color-white !important;
                 }
             }
         }

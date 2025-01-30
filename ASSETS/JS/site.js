@@ -46,7 +46,10 @@ function fetchData(url, type) {
         .then((result) => {
             return result.json();
         })
-
+        .catch((error) => {
+            console.error("Fejl: ", error);
+            return null;
+        })
         .then((data) => {
             switch (type) {
                 case "bus":

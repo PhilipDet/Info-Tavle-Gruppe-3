@@ -1,11 +1,7 @@
 export const displayData = (data) => {
     const container = document.getElementById("bustiderne");
     if (container) {
-        if (
-            data &&
-            data.MultiDepartureBoard &&
-            data.MultiDepartureBoard.Departure
-        ) {
+        if (data !== null) {
             const departures = data.MultiDepartureBoard.Departure;
 
             // Sorter Ankomst tid
@@ -36,7 +32,14 @@ export const displayData = (data) => {
                 }
             });
         } else {
-            container.innerHTML = "<p>Intet afgangs data fundet</p>";
+            const card = document.createElement("div");
+            card.className = "bustid no-data";
+            card.innerHTML = "<p>Intet afgangs data fundet</p>";
+            container.innerHTML = `
+                <div class="bustid no-data">
+                    <p>Vi oplever problemer med dataindhentning..</p>
+                </div>
+            `;
         }
     } else {
         console.error("Fejl: Kunne ikke finde data-container");

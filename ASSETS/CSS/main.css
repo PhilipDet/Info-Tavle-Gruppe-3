@@ -5,7 +5,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
   padding: 20px;
 }
 #bustider legend {
@@ -73,10 +73,14 @@
   max-width: 70px;
   width: 100%;
 }
+#bustider #bustidContainer #bustiderne .no-data p {
+  max-width: 100% !important;
+  background-color: #ffffff !important;
+}
 
 #clockFieldset {
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 3/5;
   border: 3px solid #fdf251;
   border-radius: 5px;
   display: flex;
@@ -111,7 +115,7 @@
 
 #menu {
   grid-column: 2/3;
-  grid-row: 1/4;
+  grid-row: 1/5;
   border: 3px solid #fdf251;
   border-radius: 5px;
   display: flex;
@@ -185,7 +189,7 @@
 }
 #skema {
   grid-column: 3/5;
-  grid-row: 1/4;
+  grid-row: 1/5;
   border: 3px solid #fdf251;
   border-radius: 5px;
   display: flex;
@@ -239,15 +243,20 @@
   padding: 5px;
 }
 #skema #skema-container table tbody tr td:first-child {
-  border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 2px 0;
   text-transform: uppercase;
 }
 #skema #skema-container table tbody tr td:nth-child(2) {
   text-transform: uppercase;
 }
 #skema #skema-container table tbody tr td:last-child {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 0 2px;
   background-color: #fdf251;
+  text-align: center;
+}
+#skema #skema-container table tbody tr.no-data td {
+  border-radius: 2px;
+  background-color: #ffffff !important;
 }
 
 * {
@@ -284,5 +293,6 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(4, 360px);
+  grid-template-rows: repeat(4, 1fr);
   gap: 20px 40px;
 }/*# sourceMappingURL=main.css.map */

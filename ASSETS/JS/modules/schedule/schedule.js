@@ -42,6 +42,11 @@ function makeSchedule(schedule) {
     const scheduleElement = document.getElementById("skema-timer");
     let html = ``;
 
+    if (schedule.length === 0) {
+        scheduleElement.innerHTML =
+            "<tr class='no-data'><td colspan='5'>Ikke flere timer i dag..</td></tr>";
+        return;
+    }
     const maxItems = Math.min(schedule.length, 11);
 
     for (let i = 0; i < maxItems; i++) {

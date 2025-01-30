@@ -2,7 +2,7 @@
 
 #skema {
     grid-column: 3 / 5;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     border: 3px solid colors.$color-yellow;
     border-radius: 5px;
     display: flex;
@@ -61,7 +61,7 @@
                         font-weight: 600;
                         padding: 5px;
                         &:first-child {
-                            border-radius: 2px 0 0 2px;
+                            border-radius: 2px 0 2px 0;
                             text-transform: uppercase;
                         }
 
@@ -70,8 +70,16 @@
                         }
 
                         &:last-child {
-                            border-radius: 0 2px 2px 0;
+                            border-radius: 0 2px 0 2px;
                             background-color: colors.$color-yellow;
+                            text-align: center;
+                        }
+                    }
+
+                    &.no-data {
+                        td {
+                            border-radius: 2px;
+                            background-color: colors.$color-white !important;
                         }
                     }
                 }
