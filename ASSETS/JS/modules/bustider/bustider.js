@@ -37,7 +37,7 @@ export const displayData = (data) => {
             card.innerHTML = "<p>Intet afgangs data fundet</p>";
             container.innerHTML = `
                 <div class="bustid no-data">
-                    <p>Vi oplever problemer med dataindhentning..</p>
+<p>Seriøst... Vil du hellere fare vild som en dum mongol end at bruge Rejseplanen?!</p>
                 </div>
             `;
         }
